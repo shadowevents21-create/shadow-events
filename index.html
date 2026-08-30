@@ -2,74 +2,383 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name:"google-site-verification" content="google55abcbffc98af9fe.html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shadow Creator Events Management | Vellore</title>
 <meta name="description" content="Shadow Creator Events Management - Weddings, corporate events, parties, concerts and complete event planning in Vellore.">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#090909;color:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(8,8,8,.88);backdrop-filter:blur(12px);border-bottom:1px solid #292929}
-.nav{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
-.logo{font-weight:800;letter-spacing:1px;color:#d7b56d}.logo span{color:#fff}
-.links{display:flex;gap:22px;font-size:14px}.links a:hover{color:#d7b56d}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:110px 20px 70px;background:radial-gradient(circle at 50% 30%,#29200f 0,#12100c 25%,#090909 60%)}
-.hero h1{font-size:clamp(42px,8vw,88px);line-height:1.02;margin-bottom:20px}.gold{color:#d7b56d}
-.hero p{max-width:680px;margin:0 auto 30px;color:#c9c9c9;font-size:18px}
-.btn{display:inline-block;padding:14px 24px;border-radius:30px;background:#d7b56d;color:#111;font-weight:700;margin:5px}.btn.alt{background:transparent;color:#fff;border:1px solid #777}
-section{padding:85px 20px}.wrap{max-width:1100px;margin:auto}
-.title{text-align:center;margin-bottom:45px}.title h2{font-size:38px}.title p{color:#aaa;margin-top:8px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#111;border:1px solid #292929;border-radius:18px;padding:28px;transition:.3s}.card:hover{transform:translateY(-6px);border-color:#d7b56d}
-.icon{font-size:35px;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:#aaa;font-size:14px}
-.about{background:#0d0d0d}.aboutbox{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.aboutbox p{color:#aaa;margin:15px 0}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{border:1px solid #292929;border-radius:15px;padding:20px;text-align:center;background:#111}.stat strong{display:block;font-size:28px;color:#d7b56d}
-.cta{text-align:center;background:linear-gradient(120deg,#1b150b,#0b0b0b);border-top:1px solid #292929;border-bottom:1px solid #292929}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contactbox{background:#111;padding:28px;border-radius:18px;border:1px solid #292929}.contactbox p{color:#aaa;margin:10px 0}
-footer{text-align:center;padding:30px 20px;color:#888;font-size:13px;border-top:1px solid #222}
-@media(max-width:750px){.links{display:none}.grid,.aboutbox,.contact{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr 1fr}.hero p{font-size:16px}section{padding:65px 18px}}
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0
+    }
+
+    html{
+        scroll-behavior:smooth
+    }
+
+    body{
+        font-family:Arial,Helvetica,sans-serif;
+        background:#090909;
+        color:#fff;
+        line-height:1.6
+    }
+
+    a{
+        text-decoration:none;
+        color:inherit
+    }
+
+    nav{
+        position:fixed;
+        top:0;width:100%;
+        z-index:10;
+        background:rgba(8,8,8,.88);
+        backdrop-filter:blur(12px);
+        border-bottom:1px solid #292929
+    }
+
+    .nav{
+        max-width:1150px;
+        margin:auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:16px 20px
+    }
+
+    .logo{
+        font-weight:800;
+        letter-spacing:1px;
+        color:#d7b56d
+    }
+    
+    .logo span{
+        color:#fff
+    }
+
+    .links{
+        display:flex;
+        gap:22px;
+        font-size:14px
+    }
+
+    .links a:hover{
+        color:#d7b56d
+    }
+
+    .hero{
+        min-height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        padding:110px 20px 70px;
+        background:radial-gradient(circle at 50% 30%,#29200f 0,#12100c 25%,#090909 60%)
+    }
+
+    .hero h1{
+        font-size:clamp(42px,8vw,88px);
+        line-height:1.02;
+        margin-bottom:20px
+    }
+    
+    .gold{
+        color:#d7b56d
+    }
+
+    .hero p{
+        max-width:680px;
+        margin:0 auto 30px;
+        color:#c9c9c9;
+        font-size:18px
+    }
+
+    .btn{
+        display:inline-block;
+        padding:14px 24px;
+        border-radius:30px;
+        background:#d7b56d;
+        color:#111;
+        font-weight:700;
+        margin:5px
+    }
+    
+    .btn.alt{
+        background:transparent;
+        color:#fff;
+        border:1px solid #777
+    }
+
+    section{
+        padding:85px 20px
+    }
+    
+    .wrap{
+        max-width:1100px;
+        margin:auto
+    }
+
+    .title{
+        text-align:center;
+        margin-bottom:45px
+    }
+    
+    .title h2{
+        font-size:38px
+    }
+    
+    .title p{
+        color:#aaa;
+        margin-top:8px
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px
+    }
+
+    .card{
+        background:#111;
+        border:1px solid #292929;
+        border-radius:18px;
+        padding:28px;
+        transition:.3s
+    }
+    
+    .card:hover{
+        transform:translateY(-6px);
+        border-color:#d7b56d
+    }
+
+    .icon{
+        font-size:35px;
+        margin-bottom:12px
+    }
+    
+    .card h3{
+        margin-bottom:8px
+    }
+    
+    .card p{
+        color:#aaa;
+        font-size:14px
+    }
+
+    .about{
+        background:#0d0d0d
+    }
+    
+    .aboutbox{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:35px;
+        align-items:center
+    }
+    
+    .aboutbox p{
+        color:#aaa;
+        margin:15px 0
+    }
+
+    .stats{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:12px
+    }
+    
+    .stat{
+        border:1px solid #292929;
+        border-radius:15px;
+        padding:20px;
+        text-align:center;
+        background:#111
+    }
+    
+    .stat strong{
+        display:block;
+        font-size:28px;
+        color:#d7b56d
+    }
+
+    .cta{
+        text-align:center;
+        background:linear-gradient(120deg,#1b150b,#0b0b0b);
+        border-top:1px solid #292929;
+        border-bottom:1px solid #292929
+    }
+
+    .contact{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:25px
+    }
+    
+    .contactbox{
+        background:#111;
+        padding:28px;
+        border-radius:18px;
+        border:1px solid #292929
+    }
+    
+    .contactbox p{
+        color:#aaa;
+        margin:10px 0
+    }
+
+    footer{
+        text-align:center;
+        padding:30px 20px;
+        color:#888;
+        font-size:13px;
+        border-top:1px solid #222
+    }
+    @media(max-width:750px){
+        .links{
+            display:none
+        }
+        .grid,.aboutbox,.contact{
+            grid-template-columns:1fr
+        }
+        .stats{
+            grid-template-columns:1fr 1fr 1fr
+        }
+        .hero p{
+            font-size:16px
+        }
+        section{
+            padding:65px 18px
+        }
+    }
 </style>
 </head>
 <body>
-<nav><div class="nav"><div class="logo">SHADOW <span>CREATOR</span></div><div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
+    <nav>
+        <div class="nav">
+            <div class="logo">SHADOW <span>CREATOR</span></div>
+            <div class="links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<header class="hero">
-<div>
-<p class="gold" style="font-weight:700;letter-spacing:3px">SHADOW CREATOR EVENTS MANAGEMENT</p>
-<h1>YOUR MOMENTS.<br><span class="gold">OUR MASTERPIECE.</span></h1>
-<p>We plan, design and manage unforgettable weddings, celebrations, corporate events, concerts and private parties in Vellore.</p>
-<a class="btn" href="#contact">Plan Your Event</a>
-<a class="btn alt" href="https://wa.me/919384270263?text=Hi%20Shadow%20Creator%20Events,%20I%20would%20like%20to%20plan%20an%20event." target="_blank">WhatsApp Us</a>
-</div>
-</header>
+    <header class="hero">
+        <div>
+            <p class="gold" style="font-weight:700;letter-spacing:3px">SHADOW CREATOR EVENTS MANAGEMENT</p>
+            <h1>YOUR MOMENTS.<br><span class="gold">OUR MASTERPIECE.</span></h1>
+            <p>We plan, design and manage unforgettable weddings, celebrations, corporate events, concerts and private parties in Vellore.</p>
+            <a class="btn" href="#contact">Plan Your Event</a>
+            <a class="btn alt" href="https://wa.me/919384270263?text=Hi%20Shadow%20Creator%20Events,%20I%20would%20like%20to%20plan%20an%20event." target="_blank">WhatsApp Us</a>
+        </div>
+    </header>
 
-<section id="services"><div class="wrap">
-<div class="title"><h2>What We <span class="gold">Create</span></h2><p>Complete event solutions from concept to celebration.</p></div>
-<div class="grid">
-<div class="card"><div class="icon"></div><h3>Weddings</h3><p>Elegant wedding planning, decoration, stage design and complete event coordination.</p></div>
-<div class="card"><div class="icon"></div><h3>Private Parties</h3><p>Birthdays, anniversaries, engagements and memorable family celebrations.</p></div>
-<div class="card"><div class="icon"></div><h3>Corporate Events</h3><p>Professional conferences, launches, meetings, annual events and celebrations.</p></div>
-<div class="card"><div class="icon"></div><h3>Concerts & Stage</h3><p>Stage setup, lighting, sound coordination and event production support.</p></div>
-<div class="card"><div class="icon">✨</div><h3>Decoration</h3><p>Creative themes, floral concepts, entrance décor, backdrops and premium styling.</p></div>
-<div class="card"><div class="icon"></div><h3>Event Management</h3><p>Planning, vendor coordination, scheduling and on-site management from start to finish.</p></div>
-</div></div></section>
 
-<section id="about" class="about"><div class="wrap">
-<div class="aboutbox"><div><div class="title" style="text-align:left;margin-bottom:10px"><h2>Why <span class="gold">Shadow Creator?</span></h2></div>
-<p>We turn ideas into beautifully planned experiences. Our team focuses on creativity, smooth coordination and memorable details so you can enjoy your special day without the stress.</p>
-<a class="btn" href="#contact">Let's Create Together</a></div>
-<div class="stats"><div class="stat"><strong>100%</strong>Dedication</div><div class="stat"><strong>360°</strong>Event Support</div><div class="stat"><strong>1</strong>Trusted Team</div></div></div>
-</div></section>
+    <section id="services">
+        <div class="wrap">
+            <div class="title">
+                <h2>What We <span class="gold">Create</span></h2>
+                <p>Complete event solutions from concept to celebration.</p>
+            </div>
 
-<section class="cta"><div class="wrap"><div class="title"><h2>Ready to Make Your Event <span class="gold">Unforgettable?</span></h2><p>Tell us your idea. We'll help turn it into an experience.</p></div><a class="btn" href="tel:+919384270263"> Call Now</a><a class="btn alt" href="https://www.instagram.com/shadowcreatorevents/" target="_blank">Instagram @shadowcreatorevents</a></div></section>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">💍</div>
+                    <h3>Weddings</h3>
+                    <p>Elegant wedding planning, decoration, stage design and complete event coordination.</p>
+                </div>
 
-<section id="contact"><div class="wrap"><div class="title"><h2>Let's <span class="gold">Talk</span></h2><p>Book your event consultation today.</p></div>
-<div class="contact"><div class="contactbox"><h3>Contact Shadow Creator</h3><p> Vellore, Tamil Nadu</p><p> +91 93842 70263</p><p> @shadowcreatorevents</p><a class="btn" href="https://wa.me/919384270263?text=Hi%20Shadow%20Creator%20Events,%20I%20want%20an%20event%20quotation." target="_blank">Get a Quotation on WhatsApp</a></div>
-<div class="contactbox"><h3>Quick Enquiry</h3><p>Send us your event type, date, location and approximate guest count on WhatsApp. We'll get back to you with the next steps.</p><a class="btn" href="https://wa.me/919384270263?text=Event%20Type:%0ADate:%0ALocation:%0AGuest%20Count:%0ABudget:" target="_blank">Send Event Details</a></div></div>
-</div></section>
+                <div class="card">
+                    <div class="icon">🎂</div>
+                    <h3>Private Parties</h3>
+                    <p>Birthdays, anniversaries, engagements and memorable family celebrations.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🏢</div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional conferences, launches, meetings, annual events and celebrations.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🎤</div>
+                    <h3>Concerts & Stage</h3>
+                    <p>Stage setup, lighting, sound coordination and event production support.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">✨</div>
+                    <h3>Decoration</h3>
+                    <p>Creative themes, floral concepts, entrance décor, backdrops and premium styling.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📋</div>
+                    <h3>Event Management</h3>
+                    <p>Planning, vendor coordination, scheduling and on-site management from start to finish.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="wrap">
+            <div class="aboutbox">
+                <div>
+                    <div class="title" style="text-align:left;margin-bottom:10px">
+                        <h2>Why <span class="gold">Shadow Creator?</span></h2>
+                    </div>
+                    <p>We turn ideas into beautifully planned experiences. Our team focuses on creativity, smooth coordination and memorable details so you can enjoy your special day without the stress.</p>
+                    <a class="btn" href="#contact">Let's Create Together</a>
+                </div>
+
+                <div class="stats">
+                    <div class="stat"><strong>100%</strong>Dedication</div>
+                    <div class="stat"><strong>360°</strong>Event Support</div>
+                    <div class="stat"><strong>1</strong>Trusted Team</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="wrap">
+            <div class="title">
+                <h2>Ready to Make Your Event <span class="gold">Unforgettable?</span></h2>
+                <p>Tell us your idea. We'll help turn it into an experience.</p>
+            </div>
+            <a class="btn" href="tel:+918762602856">📞 Call Now</a>
+            <a class="btn alt" href="https://www.instagram.com/shadowcreatorevents/" target="_blank">Instagram @shadow_creator_events</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrap">
+            <div class="title">
+                <h2>Let's <span class="gold">Talk</span></h2>
+                <p>Book your event consultation today.</p>
+            </div>
+
+            <div class="contact">
+                <div class="contactbox">
+                    <h3>Contact Shadow Creator</h3>
+                    <p>📍 Vellore, Tamil Nadu</p>
+                    <p>📞 +918762602856p><p>📱 @shadow_creator_events</p>
+                    <a class="btn" href="https://wa.me/919384270263?text=Hi%20Shadow%20Creator%20Events,%20I%20want%20an%20event%20quotation." target="_blank">Get a Quotation on WhatsApp</a>
+                </div>
+
+                <div class="contactbox">
+                    <h3>Quick Enquiry</h3>
+                    <p>Send us your event type, date, location and approximate guest count on WhatsApp. We'll get back to you with the next steps.</p>
+                    <a class="btn" href="https://wa.me/918762602856?text=Event%20Type:%0ADate:%0ALocation:%0AGuest%20Count:%0ABudget:" target="_blank">Send Event Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <footer>© 2026 Shadow Creator Events Management • Vellore • All Rights Reserved</footer>
-</body></html>
-
+</body>
+</html>
